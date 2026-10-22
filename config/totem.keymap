@@ -1,14 +1,14 @@
 //
-//                                                        ▀▀▀▀▀     ▀▀▀▀▀          ▀▀█▀▀
-//                                                        ▄▀▀▀▄  ▄  ▄▀▀▀▄  ▄  ▄▀▀▀▄  █  ▄▀▀▀▄
-//                                                        █   █  █  █   █  █  █   █  █  █   █
-//                                                         ▀▀▀   █   ▀▀▀   █   ▀▀▀   ▀   ▀▀▀
-//                                                               █      ▄▄▄█▄▄▄    █   █
-//                                                               ▀      █  █  █     █▄█
-//                                                             ▀▀▀▀▀    █  █  █      ▀
-//                                                                      ▀  ▀  ▀
+//                                   ▀▀▀▀▀     ▀▀▀▀▀          ▀▀█▀▀
+//                                   ▄▀▀▀▄  ▄  ▄▀▀▀▄  ▄  ▄▀▀▀▄  █  ▄▀▀▀▄
+//                                   █    █  █  █   █  █  █   █  █  █   █
+//                                     ▀▀▀   █   ▀▀▀   █   ▀▀▀   ▀   ▀▀▀
+//                                           █      ▄▄▄█▄▄▄    █   █
+//                                           ▀      █  █  █     █▄█
+//                                         ▀▀▀▀▀    █  █  █      ▀
+//                                                  ▀  ▀  ▀
 //
-// ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+// ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
@@ -28,7 +28,7 @@
 #define DE_AE   SQT             // ä / Ä
 #define DE_OE   SEMI            // ö / Ö
 #define DE_UE   LBKT            // ü / Ü
-#define DE_SS   MINUS           // ß
+#define DE_SZ   MINUS           // ß
 #define DE_EURO RA(E)           // €
 
 // Echte Windows-Shortcuts für Copy/Paste/Undo (statt K_COPY, da Windows das ignoriert!)
@@ -279,7 +279,7 @@
             display-name = "Umlaute";
             bindings = <
                          &trans      &trans      &trans       &trans       &trans           &trans       &kp DE_EURO  &kp DE_UE    &trans      &trans
-                         &kp DE_AE   &kp DE_OE   &kp DE_SS    &kp DE_UE    &kp DE_EURO      &trans       &kp DE_AE    &kp DE_OE    &kp DE_UE   &kp DE_SS
+                         &kp DE_AE   &kp DE_OE   &kp DE_SZ    &kp DE_UE    &kp DE_EURO      &trans       &kp DE_AE    &kp DE_EURO  &kp DE_UE   &kp DE_OE
             &trans       &trans      &trans      &trans       &trans       &trans           &trans       &trans       &trans       &trans      &trans      &trans
                                                  &trans       &kp LSHFT    &trans           &trans       &kp RSHFT    &trans
             >;
